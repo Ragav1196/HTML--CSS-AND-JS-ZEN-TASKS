@@ -1,0 +1,192 @@
+body{
+    border: solid;
+    font-size: 20px;
+}
+
+article{
+  margin-top: 20px;
+}
+
+.MainContainer{
+    margin: 10px;
+}
+
+/* FULLNAME */
+
+
+.FullName, .Email{
+  margin-top: 20px;
+}
+
+.bold{
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.FullName article div p{
+    margin: 0px; 
+    margin-bottom: 10px;  
+    font-size: 15px;
+}
+
+.FullName article div input{
+  height: 30px;
+  width: 269px;
+}
+
+/* EMAIL */
+.Email div input{
+    width: 269px;
+    height: 30px;
+}
+
+/* RATING */
+.rating {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    font-size: 34px;
+  }
+  
+  .rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  
+  .rating label:last-child {
+    position: static;
+  }
+  
+  .rating label:nth-child(1) {
+    z-index: 5;
+  }
+  
+  .rating label:nth-child(2) {
+    z-index: 4;
+  }
+  
+  .rating label:nth-child(3) {
+    z-index: 3;
+  }
+  
+  .rating label:nth-child(4) {
+    z-index: 2;
+  }
+  
+  .rating label:nth-child(5) {
+    z-index: 1;
+  }
+  
+  .rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  
+  .rating label .icon {
+    float: left;
+    color: transparent;
+  }
+  
+  .rating label:last-child .icon {
+    color: #000;
+  }
+  
+  .rating:not(:hover) label input:checked ~ .icon,
+  .rating:hover label:hover input ~ .icon {
+    color: #eeac82
+    ;
+  }
+  
+  .rating label input:focus:not(:checked) ~ .icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px #09f;
+  }
+
+  h6{
+    margin: 0px;
+  }
+
+  /* FEEDBACK */
+  .lap{
+    display: none;
+  }
+
+  .fb_1_Radio_1, .fb_1_Radio_2, .fb_1_Radio_3, .fb_2_Radio_1, .fb_2_Radio_2, .fb_2_Radio_3{
+    display: none;
+  }
+
+  .fb_1_Options_1:hover, .fb_1_Options_2:hover, .fb_1_Options_3:hover, .fb_2_Options_1:hover, .fb_2_Options_2:hover, .fb_2_Options_3:hover{
+      color: rgb(151, 44, 12);
+  }
+
+@media (min-width: 1171px){
+  body{
+    margin: 10px 200px;
+  }
+
+  .lap{
+    display: block;
+  }
+
+  .FullName{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  }
+
+  .FullName article{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+  }
+
+  .FullName div:nth-child(2){
+    margin-left: 20px;
+  }
+
+  .rating{
+    top: 41px;
+    left: -184px;
+  }
+
+  h6{
+    margin-top: 40px;
+  }
+
+  .FeedbackContainer_1, .FeedbackContainer_2{
+    display: none;
+  }
+
+  .fbRadio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items:center;
+  }
+
+  .commentRadio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items:center;
+    align-items: center;
+  }
+
+  #bg{
+    background-color: rgba(128, 128, 128, 0.281);
+  }
+
+  textarea{
+    width: 100%;
+  }
+
+  #submit{
+    width: 127px;
+    height: 44px;
+  }
+}
