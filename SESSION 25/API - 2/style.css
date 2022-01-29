@@ -1,0 +1,168 @@
+body {
+  background-image: url("https://www.ppt-backgrounds.net/uploads/old-paper-high-definitions-design-backgrounds.jpeg");
+  background-blend-mode: luminosity;
+  margin: 0px;
+  /* height: 100vh;
+  width: 100vw; */
+  background-size: cover;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coverPic {
+  padding: 20px;
+}
+
+/* USER INPUT: */
+.input {
+  margin: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.input > label {
+  font-size: 25px;
+  display: flex;
+  gap: 30px;
+}
+
+.input > label > input {
+  width: 200px;
+}
+
+.inputButtons {
+  display: flex;
+  gap: 30px;
+}
+
+.inputButtons > button {
+  background-color: #955c258f;
+  height: 30px;
+}
+
+/* TAMIL CONTAINER: */
+.tamilMainCntr {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tamilCntr {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 100px;
+  background-color: #e2d3ac;
+  border-radius: 10px;
+}
+
+.tamilCntr p,
+h1,
+h3 {
+  color: saddlebrown;
+  text-align: center;
+}
+
+.tamilCntr p {
+  font-size: 20px;
+}
+
+.tamilCntr h3 {
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+.tamilCntnt {
+  margin-left: 40px;
+}
+
+.tamilCntrTitle {
+  text-align: center;
+}
+
+/* ENGLISH CONTAINER */
+.englishMainCntr {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.englishCntr {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 100px;
+  background-color: #e2d3ac;
+  border-radius: 10px;
+}
+
+.englishCntr p,
+h1,
+h3 {
+  color: saddlebrown;
+  text-align: center;
+}
+
+.englishCntr p {
+  font-size: 20px;
+}
+
+.englishCntr h3 {
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+.englishCntrTitle {
+  text-align: center;
+}
+
+.errors {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.errors > p {
+  color: red;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+@media (max-width: 720px) {
+  .input {
+    margin: 50px 20px;
+  }
+
+  .input > label {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inputButtons > button {
+    height: min-content;
+    padding: 5px;
+  }
+
+  .errors {
+    text-align: center;
+  }
+
+  .errors > p {
+    font-size: 20px;
+  }
+
+  .coverPic {
+    width: 100vw;
+    padding: 0px;
+  }
+
+  .englishCntr {
+    margin: 20px 20px;
+  }
+
+  .tamilCntr {
+    margin: 20px 20px;
+  }
+}

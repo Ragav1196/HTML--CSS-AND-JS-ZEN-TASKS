@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SESSION 25 - PART 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="title">
+      <img
+        class="coverPic"
+        src="https://play-lh.googleusercontent.com/2TWKcrsv7rOnjPMY5QfrSoLkkya9QBVnV9yeW6Yc5vaTOtR0perJ8xofZS4PoX0W85Ev"
+        alt="thiruvalluvar cover pic"
+      />
+      <h1>GET THIRUKKURAL LINES AND ITS MEANING IN TAMIL AND ENGLISH</h1>
+    </section>
+
+    <section class="input">
+      <label for="thirukkual-number"
+        >ENTER THIRUKKURAL NUMBER
+        <input type="number" max="1330" min="1" id="thirukkual-number" required
+      /></label>
+      <article class="inputButtons">
+        <button onclick="ToGetInEnglish()">CLICK HERE TO GET IN ENGLISH</button>
+        <button onclick="ToGetInTamil()">CLICK HERE TO GET IN TAMIL</button>
+      </article>
+    </section>
+
+    <section class="errors"></section>
+
+    <article class="tamilMainCntr">
+      <section class="tamilCntr"></section>
+    </article>
+
+    <article class="englishMainCntr">
+      <section class="englishCntr"></section>
+    </article>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
