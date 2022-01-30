@@ -1,0 +1,130 @@
+/* .coverPic{
+    width: 100vw;
+    height: 100px;
+    object-fit: contain;
+    position: absolute;
+    top: 0px;
+} */
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  background-color: #eaf7ff;
+  font-family: -webkit-pictograph;
+}
+
+h1 {
+  margin: 0px;
+  color: #d12e25;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* MAIN CONTGAINER: */
+.mainCntr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  /* padding: 0px 130px; */
+  padding-top: 320px;
+  background-image: url("./5770.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center -107px;
+}
+
+/* INPUT FIELD: */
+.inputCntr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.inputCntr > label {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.inputCntr > label > input {
+  height: 25px;
+}
+
+.inputCntr > button {
+  background-color: #f2c9b7;
+  cursor: pointer;
+}
+
+.inputCntr > button:active {
+  transform: translateY(4px);
+  background-color: #ffa32f;
+}
+
+.contentCntr {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.contentCntr > article {
+  background-image: linear-gradient(
+    to right top,
+    #ff9933,
+    #ff9c7c,
+    #ffadb9,
+    #ffc7e7,
+    #ffe2fe,
+    #ebe1ff,
+    #d4e0ff,
+    #bedffc,
+    #66ceea,
+    #00bcbb,
+    #00a472,
+    #128807
+  );
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 300px;
+  height: min-content;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.contentCntr > article > p {
+  margin: 0px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+
+.contentCntr > article > h3 {
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .mainCntr {
+    background-position: center -60px;
+    padding-top: 27%;
+  }
+}
+
+@media (max-width: 425px) {
+  .mainCntr {
+    min-width: 425px;
+  }
+
+  .contentCntr > article {
+    min-width: 300px;
+  }
+
+  .contentCntr {
+    justify-content: unset;
+  }
+}
